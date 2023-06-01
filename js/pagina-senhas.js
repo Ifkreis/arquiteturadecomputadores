@@ -68,7 +68,7 @@ function conferir_senha()
     }
     
     if (senha.length>18){
-        Resposta_case('INDETERMINADO');
+        return retorno_senha.textContent = `TEMPO INDETERMINADO`;
     }else{
     switch(senha.length)
     {
