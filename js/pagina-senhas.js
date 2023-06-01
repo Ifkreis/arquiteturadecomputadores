@@ -66,6 +66,10 @@ function conferir_senha()
             qtde_letras_minusculas++;
         }
     }
+    
+    if (senha.length>18){
+        Resposta_case('INDETERMINADO');
+    }else{
     switch(senha.length)
     {
         case 4:
@@ -348,5 +352,6 @@ function conferir_senha()
                 Resposta_case('438 TRILHOES DE ANOS');
             }
         break;
+    }
     }
 }
